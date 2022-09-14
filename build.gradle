@@ -4,10 +4,12 @@ buildscript {
         // 添加Mob Maven地址
         maven {
             url "http://mvn.mob.com/android"
+            allowInsecureProtocol = true
         }
         google()
         maven{
             url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            allowInsecureProtocol = true
         }
     }
     dependencies {
@@ -24,6 +26,7 @@ allprojects {
         google()
         maven{
             url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            allowInsecureProtocol = true
         }
     }
 }
